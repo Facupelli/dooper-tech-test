@@ -16,6 +16,7 @@
 
 @media (max-width: 480px) {
   .section_container > div {
+    justify-content: space-around;
     column-gap: 0.875rem;
     row-gap: 1.5rem;
   }
