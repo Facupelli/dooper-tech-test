@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f0c73f;
+  background-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 100%;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
