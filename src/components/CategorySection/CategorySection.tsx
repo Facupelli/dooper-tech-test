@@ -18,11 +18,11 @@ export default function CategorySection({ title, movies }: Props) {
   );
 
   const handleSelectClick = (movie: Movie) => {
-    const target = selectedMovies.find(
+    const movieFromSameCategory = selectedMovies.find(
       (selectedMovie) => selectedMovie?.category === movie.category
     );
 
-    if (target) {
+    if (movieFromSameCategory) {
       const newSelectedMovies = selectedMovies.filter(
         (selectedMovie) => selectedMovie.category !== movie.category
       );

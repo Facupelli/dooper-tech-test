@@ -29,6 +29,7 @@ export default function VotesModal({ isModalOpen, setModal }: Props) {
       <ul>
         {moviesSlected.map((movie) => (
           <li key={movie.category}>
+            <img alt={movie.title} src={movie.photoUrL} />
             <p>
               {movie.category} - <strong>{movie.title}</strong>
             </p>

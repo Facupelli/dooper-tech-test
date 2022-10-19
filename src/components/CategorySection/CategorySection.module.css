@@ -4,7 +4,8 @@
 
 .section_container h1 {
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgb(29, 29, 29);
 }
 
 .section_container > div {
@@ -15,10 +16,7 @@
 
 @media (max-width: 480px) {
   .section_container > div {
-    display: grid;
-    grid-template-columns: 50% 50%;
     column-gap: 0.875rem;
     row-gap: 1.5rem;
-    /* column-gap: 2%; */
   }
 }

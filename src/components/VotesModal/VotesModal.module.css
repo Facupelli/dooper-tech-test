@@ -1,5 +1,6 @@
 .modal {
-  max-width: 50ch;
+  max-width: 70ch;
+  min-width: 300px;
   border: none;
   border-radius: 0.2rem;
   padding: 3rem;
@@ -22,8 +23,22 @@
   font-weight: 500;
 }
 
+.modal li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .modal ul li {
   padding: 0.5rem;
+}
+
+.modal ul li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .modal ul li p strong {
@@ -42,4 +57,14 @@
 
 .btn_wrapper button {
   padding: 0.5rem 3rem;
+}
+
+@media (max-width: 480px) {
+  .modal {
+    padding: 1.5rem;
+  }
+
+  .modal ul li img {
+    display: none;
+  }
 }
